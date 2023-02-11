@@ -47,7 +47,6 @@ res = document.getElementById("result")
 if(res.style.display=="none"){
     console.log("letss gooo")
     i=i+1
-    var temp=n
     if(number < n) {
         n = number;
     }
@@ -59,7 +58,7 @@ if(res.style.display=="none"){
     }
     else{
         console.log(n)
-        console.log("no")
+        console.log("already started")
         console.log(n)
         lo = document.getElementById("lowe");
         lo.clearInterval;
