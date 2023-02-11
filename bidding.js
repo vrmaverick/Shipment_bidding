@@ -48,6 +48,7 @@ if(res.style.display=="none"){
     console.log("letss gooo")
     i=i+1
     if(number < n) {
+        console.log("updated")
         n = number;
     }
     if(i==1){
@@ -57,7 +58,6 @@ if(res.style.display=="none"){
         lo.style.display = "block"
     }
     else{
-        console.log(n)
         console.log("already started")
         console.log(n)
         lo = document.getElementById("lowe");
