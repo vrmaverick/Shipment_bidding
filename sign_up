@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <script src="login.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+<div class=" bg-gray-700">
+    <div class="container flex justify-center py-20">
+       
+       <div class="container flex justify-center py-40">
+        <div class="{screen}:background-color: rgb(223, 198, 0); max-w-md rounded-3xl bg-orange-400 p-8 pb-10">
+
+           <div class="flex justify-center mb-4">
+
+            <img class = "max-h-20" src="https://i.ibb.co/Chz4YJP/add-user.png" alt="add-user" border="0">
+             
+           </div>
+           
+          <input type="text" class="h-12 w-full rounded-xl border px-3 font-light focus:border-blue-100 focus:text-black" placeholder="UserName" />
+
+          <input type="text" class="h-12 mt-3 rounded-xl w-full border px-3 focus:text-black focus:border-blue-100" placeholder="Email">
+
+          <input type="password" class="h-12 mt-3 rounded-xl w-full border px-3 focus:text-black focus:border-blue-100" placeholder="Password">
+
+          <input type="password" class="h-12 mt-3 rounded-xl w-full border px-3 focus:text-black focus:border-blue-100" placeholder=" Retype password">
+
+
+          
+          <div class="flex justify-center">
+          <button class="uppercase h-12 mt-3 text-black w-1/2 rounded-full bg-slate-100 hover:bg-gray-200">Sign UP</button></div>
+
+
+          <div class="flex justify-between items-center">
+            
+            <hr class="w-full">
+            <span class="p-2 text-gray-800 mb-1">OR</span>
+            <hr class="w-full">
+
+          </div>
+          <div class="space-x-2 flex align-center" >
+
+          <button class="uppercase h-12 mt-3 text-white w-1/2 rounded-full bg-blue-600 hover:bg-blue-900"><i class="fa fa-facebook mr-2"></i>Facebook</button>
+          <button class="uppercase h-12 mt-3 text-white w-1/2 rounded-full bg-red-600 hover:bg-red-900 "><i class="fa fa-google mr-2"></i>Google</button>
+          </div>
+
+         
+       </div>
+
+    </div>
+  </div>
