@@ -60,7 +60,7 @@ if(res.style.display=="none"){
     else{
         console.log("already started")
         console.log(n)
-        lo = document.getElementById("lowe");
+        var lo = document.getElementById("lowe");
         lo.textContent = n;
     }
 }
