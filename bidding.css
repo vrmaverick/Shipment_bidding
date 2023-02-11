@@ -10,8 +10,9 @@
     color:  #000000;
 }
 .info{
+    font-size: 3vh;
     text-align: center;
-    margin: 1px;
+    margin: auto;
     padding: 2vh;
     width: 100vw;
     color:  #000000;
@@ -20,6 +21,8 @@
     background: #000000;
     color: aliceblue;
     padding-left: 6vw;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 .col{
     color: #000000;
@@ -27,3 +30,30 @@
 .navbar-brand{
 color: #FFA726;
 }
+body{
+    color: aliceblue;
+    background-color: #000000;
+}
+.ship{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background:#616161;
+}
+.pic{
+    margin:20px 0px;
+    border: 4px solid #FFA726;
+}
+.desc ul li{
+    text-align: center;
+    background-color: #FFA726;
+    color: #000000;
+    border: 2px solid black;
+}
+.desc{
+    margin: 5px;
+}
+/* .desc2{
+    margin: 5px;
+    visibility: hidden;
+} */
