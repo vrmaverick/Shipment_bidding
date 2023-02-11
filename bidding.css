@@ -3,11 +3,12 @@
     padding: 0;
 }
 .prinfo{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     /* text-align: center; */
     background: #FFA726;
     color:  #000000;
+    flex-wrap: wrap;
 }
 .info{
     font-size: 3vh;
@@ -67,3 +68,12 @@ body{
     background-color: #616161;
     color: #FFA726;
 }
+.time{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+/* #a{
+
+} */
