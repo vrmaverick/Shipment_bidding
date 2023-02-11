@@ -48,22 +48,23 @@ if(res.style.display=="none"){
     console.log("letss gooo")
     i=i+1
     var temp=n
-    n= number
+    if(number < n) {
+        n = number;
+    }
     if(i==1){
         console.log("First")
         var lo = document.getElementById("lowe");
-        lo.textContent = number;
+        lo.textContent = n;
         lo.style.display = "block"
     }
     else{
         console.log(n)
         console.log("no")
         console.log(n)
-        if(number<temp){
         lo = document.getElementById("lowe");
         lo.clearInterval;
-        lo.textContent = number;
-        }
+        lo.textContent = n;
     }
 }
 });
+
