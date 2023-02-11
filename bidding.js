@@ -47,9 +47,9 @@ res = document.getElementById("result")
 if(res.style.display=="none"){
     console.log("letss gooo")
     i=i+1
+    temp=n
+    n= number
     if(i==1){
-        temp=n
-        n= number
         console.log("First")
         var lo = document.getElementById("lowe");
         lo.textContent = number;
