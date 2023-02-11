@@ -61,7 +61,7 @@ if(res.style.display=="none"){
         console.log("already started")
         console.log(n)
         lo = document.getElementById("lowe");
-        lo.clearInterval;
+        clearInterval(intervalID);
         lo.textContent = n;
     }
 }
