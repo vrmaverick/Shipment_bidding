@@ -9,6 +9,7 @@
     background: #FFA726;
     color:  #000000;
     flex-wrap: wrap;
+    font-family: 'Merriweather', serif;
 }
 .info{
     font-size: 3vh;
@@ -17,6 +18,8 @@
     padding: 2vh;
     width: 100vw;
     color:  #000000;
+    flex-wrap: wrap;
+    font-family: 'Merriweather', serif;
 }
 .head{
     background: #000000;
@@ -24,6 +27,7 @@
     padding-left: 6vw;
     padding-bottom: 3vh;
     padding-top: 3vh;
+    font-family: 'Merriweather', serif;
 }
 .col{
     color: #000000;
@@ -63,17 +67,56 @@ body{
     background-color:#616161; ;
     color: #FFA726;
     padding: 2vh 20vw;
+    font-family: 'Amatic SC', cursive;
+
 }
 .accordion-body{
     background-color: #616161;
     color: #FFA726;
+    font-family: 'Amatic SC', cursive;
 }
 .time{
     display: flex;
     justify-content: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #616161;
+    color:#FFA726;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    font-family: 'Merriweather', serif;
 }
 /* #a{
 
 } */
+.low{
+    display: flexbox;
+    flex-direction: row;
+    background: #616161;
+    font-family: 'Merriweather', serif; 
+}
+.lo{
+    padding-left: 5px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #FFA726;
+    font-weight: bolder;
+    font-size: large;
+}
+.accordion-button{
+    background: #000;
+    color: #FFA726;
+    border-top: 0.5px solid white;
+    font-family: 'Amatic SC', cursive;
+
+}
+.btn{
+    text-align: center;
+    /* background: #ffffff; */
+    margin-left: 150px;
+}
+.row{
+    padding-left: 100px;
+}
+.bee{
+    background-color: #000;
+}
