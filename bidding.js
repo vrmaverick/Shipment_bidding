@@ -1,3 +1,6 @@
+const disable = () => {
+  document.getElementById("newBid").disabled=true;
+}
 function displayResult(message) {
     document.getElementById("timer").style.display = "none";
     var result = document.getElementById("result");
@@ -19,14 +22,18 @@ function displayResult(message) {
     if (--timer < 0) {
         clearInterval(intervalId);
         displayResult("Time-is-up!!!")
+        disable()
     }
   }, 1000);
   }
 
-var n=1000000
-var i=0
+let n=1000000
+let i=0
 var intervalId;
 document.getElementById("startTimer").addEventListener("click", function() {
+    let rel = document.getElementById("newBid");
+    rel.style.display = "inline-block";
+    document.getElementById("startTimer").disabled=true;
 //   var inputValue = document.getElementById("inputBid").value;
 //   if (inputValue) {
     // var re = document.getElementById("newBid");
@@ -35,7 +42,7 @@ document.getElementById("startTimer").addEventListener("click", function() {
     // r.disabled = isDisabled
 
     clearInterval(intervalId);
-    var duration = 300;
+//     var duration = 300;
     var display = document.querySelector('#timer');
     startTimer(300, display);
 //   }
