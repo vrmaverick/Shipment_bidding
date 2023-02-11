@@ -43,6 +43,7 @@ body{
 .pic{
     margin:20px 0px;
     border: 4px solid #FFA726;
+    text-align: center;
 }
 .desc ul li{
     text-align: center;
@@ -57,3 +58,12 @@ body{
     margin: 5px;
     visibility: hidden;
 } */
+.label{
+    background-color:#616161; ;
+    color: #FFA726;
+    padding: 2vh 20vw;
+}
+.accordion-body{
+    background-color: #616161;
+    color: #FFA726;
+}
