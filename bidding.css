@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.prinfo{
+    /* display: flex;
+    flex-direction: column; */
+    /* text-align: center; */
+    background: #FFA726;
+    color:  #000000;
+}
+.info{
+    text-align: center;
+    margin: 1px;
+    padding: 2vh;
+    width: 100vw;
+    color:  #000000;
+}
+.head{
+    background: #000000;
+    color: aliceblue;
+    padding-left: 6vw;
+}
+.col{
+    color: #000000;
+}
+.navbar-brand{
+color: #FFA726;
+}
