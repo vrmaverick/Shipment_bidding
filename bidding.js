@@ -47,7 +47,7 @@ res = document.getElementById("result")
 if(res.style.display=="none"){
     console.log("letss gooo")
     i=i+1
-    temp=n
+    var temp=n
     n= number
     if(i==1){
         console.log("First")
