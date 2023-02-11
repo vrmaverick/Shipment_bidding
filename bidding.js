@@ -41,7 +41,7 @@ document.getElementById("startTimer").addEventListener("click", function() {
 //   }
 });
 document.getElementById("newBid").addEventListener("click", function() {
-var number = document.getElementById("inputBid").value;
+var number = parseInt(document.getElementById("inputBid").value);
 console.log(number);
 res = document.getElementById("result")
 if(res.style.display=="none"){
