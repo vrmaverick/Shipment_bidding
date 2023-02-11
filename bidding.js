@@ -48,6 +48,7 @@ if(res.style.display=="none"){
     console.log("letss gooo")
     i=i+1
     if(i==1){
+        temp=n
         n= number
         console.log("First")
         var lo = document.getElementById("lowe");
@@ -58,7 +59,7 @@ if(res.style.display=="none"){
         console.log(n)
         console.log("no")
         console.log(n)
-        if(number<n){
+        if(number<temp){
         lo = document.getElementById("lowe");
         lo.clearInterval;
         lo.textContent = number;
