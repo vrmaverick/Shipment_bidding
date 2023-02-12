@@ -10,6 +10,7 @@
     color:  #000000;
     flex-wrap: wrap;
     font-family: 'Merriweather', serif;
+    margin-top: 11vh;
 }
 .info{
     font-size: 3vh;
@@ -49,6 +50,8 @@ body{
     margin:20px 0px;
     border: 4px solid #FFA726;
     text-align: center;
+    padding-right:23vw;
+    padding-left: 23vw;
 }
 .desc ul li{
     text-align: center;
