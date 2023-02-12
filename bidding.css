@@ -91,10 +91,12 @@ body{
 
 } */
 .low{
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     background: #616161;
     font-family: 'Merriweather', serif; 
+    text-align: center;
+    column-gap: 20vw;
 }
 .lo{
     padding-left: 5px;
