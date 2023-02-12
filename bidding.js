@@ -29,6 +29,7 @@ const disable = () => {
   var n=1000000
   let i=0
   var intervalId;
+  let x
 
   document.getElementById("startTimer").addEventListener("click", function() {
       let rel = document.getElementById("newBid");
@@ -50,12 +51,12 @@ const disable = () => {
   });
   document.getElementById("newBid").addEventListener("click", function() {
   var number = parseInt(document.getElementById("inputBid").value);
-  console.log(number);
+  console.log(number,2);
 
 
   bid(number)
   });
-  const bid = (number) => {
+  const bid = (number,name) => {
         res = document.getElementById("result")
         if(res.style.display=="none"){
             console.log("letss gooo")
@@ -63,18 +64,25 @@ const disable = () => {
             if(number < n) {
                 console.log("updated")
                 n = number;
+                if(name==1){
+                    document.getElementById("name").innerHTML = "Computer"
+                }
+                else
+                {
+                    document.getElementById("name").innerHTML = "Username"   
+                }
             }
             if(i==1){
                 console.log("First")
                 var lo = document.getElementById("lowe");
-                lo.textContent = n;
+                lo.textContent = "Rs"+n;
                 lo.style.display = "block"
             }
             else{
                 console.log("already started")
                 console.log(n)
                 var lo = document.getElementById("lowe");
-                lo.textContent = n;
+                lo.textContent = "Rs"+n;
             }
         }
   }
@@ -96,7 +104,7 @@ myLoop(z)
 }}
 function myLoop(z) {         //  create a loop function
     setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-        bid(z)  //  your code here
+        bid(z,1)  //  your code here
       i++;                    //  increment the counter
       if (i < 10) { 
         z=z-500          //  if the counter < 10, call the loop function
