@@ -10,44 +10,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="gambling.css">
 </head>
 <body>
-    <nav class="navbar" style="background-color: #616161;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        LOGO
+                    </a>
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                        <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a></li>
+                        <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a>
+                        </li>
+                        <li class="scroll-to-section"><a href="#" class="menu-item">Log-in</a></li>
+                        <li class="submenu">
+                            <a href="javascript:;">Drop Down</a>
+                            <ul>
+                                <li><a href="" class="menu-item">About Us</a></li>
+                                <li><a href="" class="menu-item">Features</a></li>
+                                <li><a href="" class="menu-item">FAQ's</a></li>
+                                <li><a href="" class="menu-item">Blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
         </div>
-      </nav>
+    </div>
+</header>
       <!--Nav end-->
     <div>
         <div class="prinfo">
@@ -171,6 +171,7 @@
             </div>
             <div class="low">
                 <div class="lo">Lowest bid is :</div>
+                <div class="lo" id="name"></div>
                 <div class="lo" id="lowe"style="display: none;"></div>
             </div>
             <form class="Bee">
@@ -193,7 +194,44 @@
             </div>
         </div>
     </div> 
+    <!--Footer-->
+    <footer id="contact-us">
+      <div class="container">
+          <div class="footer-content">
+              <div class="row">
+                  <div class="footer-stock col-lg">
+                      <img src="https://i.ibb.co/0VG1wtr/abstract-business-chart-trend-line-graph-stock-numbers-orange-color-background-bar-93729679.jpg" class="rounded-lg" width="550px">
+                  </div>
+                  <!-- Contact Form End -->
+                  <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                      <h2>More About <em>NAME</em></h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nibh sed pulvinar proin gravida hendrerit lectus a.
+                          <br><br>Follow us bellow to.......</p>
+                      <ul class="social">
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="#"><i class="fa fa-github"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="sub-footer">
+                      <p>Help and Support: 
+                      <a href="#">Contact US | </a>
+                      <a href="#">Privacy Policy</a> 
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="bidding.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
 </body>
 </html>
